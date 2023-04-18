@@ -1,7 +1,139 @@
+/* GENERAL THINGS */
+
 :root {
   /* Color */
   --main-text-color: #434455;
-  --title-color: #2e2f42;
+  --title-bg-color: #2e2f42;
   --primary-brand: #4d5ae5;
   --white-color: #ffffff;
+  --light-mode: #f4f4fd;
+  --light-bg: #e7e9fc;
+  --cta-color: #404bbf;
+}
+
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: roboto, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+  background-color: var(--white-color);
+}
+
+.footer {
+  background-color: var(--title-bg-color);
+}
+
+.btn {
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+}
+
+/* LOGO */
+
+.logo {
+  font-family: raleway, sans-serif;
+  font-size: 18px;
+  line-height: 1.17;
+
+  text-decoration: none;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-bg-color);
+}
+.logo-name {
+  color: var(--primary-brand);
+}
+.logo-name-footer {
+  color: var(--white-color);
+}
+.logo-slogan {
+  color: var(--light-mode);
+}
+
+/* MAIN NAVIGATION */
+
+.nav-list {
+  font-weight: 500;
+  color: var(--title-bg-color);
+}
+.nav-list-item {
+  text-decoration: none;
+}
+.nav-list-item:hover,
+.nav-list-item:focus,
+.nav-list-item:active {
+  color: var(--primary-brand);
+}
+.contacts {
+  font-style: normal;
+}
+.contact-mail,
+.contact-tel {
+  color: var(--main-text-color);
+}
+.contact-mail:hover,
+.contact-mail:focus,
+.contact-tel:hover,
+.contact-tel:focus {
+  color: var(--primary-brand);
+}
+
+/* HERO SECTION */
+.hero-section {
+  background-color: var(--title-bg-color);
+}
+.hero-title {
+  font-weight: 800;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  color: var(--white-color);
+}
+.hero-button {
+  background-color: var(--primary-brand);
+  color: var(--white-color);
+}
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--cta-color);
+}
+
+/* Titles */
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+  text-align: center;
+  text-transform: capitalize;
+}
+.subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--title-bg-color);
+}
+
+/* OUR TEAM SECTION */
+.team {
+  background-color: var(--light-mode);
+}
+/* Portfolio button */
+.filter-btn {
+  background-color: var(--light-mode);
+  color: var(--primary-brand);
+}
+.filter-btn:hover,
+.filter-btn:focus {
+  background-color: var(--cta-color);
+  color: var(--white-color);
 }
