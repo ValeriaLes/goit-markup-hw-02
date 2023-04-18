@@ -70,8 +70,7 @@ body {
   text-decoration: none;
 }
 .nav-list-item:hover,
-.nav-list-item:focus,
-.nav-list-item:active {
+.nav-list-item:focus {
   color: var(--primary-brand);
 }
 .contacts {
