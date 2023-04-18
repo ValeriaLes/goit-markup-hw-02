@@ -1,4 +1,4 @@
-/* GENERAL THINGS */
+/* BASE STYLE */
 
 :root {
   /* Color */
@@ -11,13 +11,6 @@
   --cta-color: #404bbf;
 }
 
-ul {
-  list-style-type: none;
-}
-a {
-  text-decoration: none;
-}
-
 body {
   font-family: roboto, sans-serif;
   font-weight: 400;
@@ -28,14 +21,12 @@ body {
   background-color: var(--white-color);
 }
 
-.footer {
-  background-color: var(--title-bg-color);
+.link {
+  text-decoration: none;
 }
 
-.btn {
-  font-weight: 500;
-  letter-spacing: 0.04em;
-  cursor: pointer;
+.list {
+  list-style: none;
 }
 
 /* LOGO */
@@ -44,8 +35,6 @@ body {
   font-family: raleway, sans-serif;
   font-size: 18px;
   line-height: 1.17;
-
-  text-decoration: none;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-bg-color);
@@ -62,15 +51,13 @@ body {
 
 /* MAIN NAVIGATION */
 
-.nav-list {
+.main-nav {
   font-weight: 500;
   color: var(--title-bg-color);
 }
-.nav-list-item {
-  text-decoration: none;
-}
-.nav-list-item:hover,
-.nav-list-item:focus {
+
+.main-nav-item:hover,
+.main-nav-item:focus {
   color: var(--primary-brand);
 }
 .contacts {
@@ -78,7 +65,7 @@ body {
 }
 .contact-mail,
 .contact-tel {
-  color: var(--main-text-color);
+  color: inherit;
 }
 .contact-mail:hover,
 .contact-mail:focus,
@@ -88,27 +75,21 @@ body {
 }
 
 /* HERO SECTION */
+
 .hero-section {
   background-color: var(--title-bg-color);
 }
 .hero-title {
-  font-weight: 800;
+  font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
   color: var(--white-color);
 }
-.hero-button {
-  background-color: var(--primary-brand);
-  color: var(--white-color);
-}
-.hero-button:hover,
-.hero-button:focus {
-  background-color: var(--cta-color);
-}
 
-/* Titles */
-.title {
+/* SECTION */
+
+.section-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.1;
@@ -122,11 +103,34 @@ body {
   color: var(--title-bg-color);
 }
 
-/* OUR TEAM SECTION */
-.team {
+.team-section {
   background-color: var(--light-mode);
 }
-/* Portfolio button */
+
+/* PORTFOLIO SECTION */
+.subtitle-text {
+  color: var(--main-text-color);
+}
+
+/* BUTTON */
+
+.btn {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+}
+.hero-button {
+  background-color: var(--primary-brand);
+  color: var(--white-color);
+}
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--cta-color);
+}
+
 .filter-btn {
   background-color: var(--light-mode);
   color: var(--primary-brand);
@@ -135,4 +139,9 @@ body {
 .filter-btn:focus {
   background-color: var(--cta-color);
   color: var(--white-color);
+}
+
+/* FOOTER */
+.footer {
+  background-color: var(--title-bg-color);
 }
