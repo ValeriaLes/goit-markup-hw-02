@@ -12,7 +12,7 @@
 }
 
 body {
-  font-family: roboto, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -32,18 +32,19 @@ body {
 /* LOGO */
 
 .logo {
-  font-family: raleway, sans-serif;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--title-bg-color);
-}
-.logo-name {
   color: var(--primary-brand);
 }
+.logo-name {
+  color: var(--title-bg-color);
+}
 .logo-name-footer {
-  color: var(--white-color);
+  color: var(--light-mode);
 }
 .logo-slogan {
   color: var(--light-mode);
@@ -53,25 +54,24 @@ body {
 
 .main-nav {
   font-weight: 500;
+}
+.main-nav-item {
   color: var(--title-bg-color);
 }
 
 .main-nav-item:hover,
 .main-nav-item:focus {
-  color: var(--primary-brand);
+  color: var(--cta-color);
 }
-.contacts {
+.address {
   font-style: normal;
 }
-.contact-mail,
-.contact-tel {
+.contact {
   color: inherit;
 }
-.contact-mail:hover,
-.contact-mail:focus,
-.contact-tel:hover,
-.contact-tel:focus {
-  color: var(--primary-brand);
+.contact:hover,
+.contact:focus {
+  color: var(--cta-color);
 }
 
 /* HERO SECTION */
@@ -83,6 +83,7 @@ body {
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
+  letter-spacing: 0.02em;
   text-align: center;
   color: var(--white-color);
 }
@@ -92,30 +93,36 @@ body {
 .section-title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.1;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
   text-align: center;
   text-transform: capitalize;
+  color: var(--title-bg-color);
 }
 .subtitle {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
+  letter-spacing: 0.02em;
   color: var(--title-bg-color);
 }
 
 .team-section {
   background-color: var(--light-mode);
 }
+.first-worker {
+  background-color: var(--white-color);
+}
 
 /* PORTFOLIO SECTION */
-.subtitle-text {
+.portfolio-text {
   color: var(--main-text-color);
 }
 
 /* BUTTON */
 
 .btn {
-  font-family: inherit;
+  font-family: "Roboto", sans-serif;
   font-size: inherit;
   line-height: inherit;
   font-weight: 500;
